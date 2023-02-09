@@ -1,5 +1,6 @@
-import { Box, Container, Flex, Heading, MenuItem, Stack, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Menu, MenuItem, Stack, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
+import ThemeToggleButton from "../utils/toggleBtn";
 
 
 const Link = ({ children, href }) => {
@@ -77,8 +78,16 @@ const Navbar = (props) => {
             <NextLink href="/sobre" passHref>
               Sobre
             </NextLink>
-            <Box>
-              
+            <Box flex={1} align="right">
+              <ThemeToggleButton />
+              <Box 
+                ml={2}
+                display={{ base: "inline-block", md: 'none' }}
+              >
+                <Menu>
+                  
+                </Menu>
+              </Box>
             </Box>
           </Stack>
         </Flex>
