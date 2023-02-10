@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Navbar from '@/components/navbar/navbar'
 import { Container } from '@chakra-ui/react'
+import HeaderC from '@/components/headerC/headerC'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ children, router }) {
+export default function Home({ router }) {
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ export default function Home({ children, router }) {
       <Navbar path={router}/>
 
       <Container maxW="container.md" pt={7}>
-        { children }
+        <HeaderC />
       </Container>
     
     </>
