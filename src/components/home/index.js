@@ -17,7 +17,7 @@ const Main = () => {
   }, [])
 
   return (
-    <div name="home" className="h-screen w-full bg-gradient-to-b from-gray-900 to bg-gray-800 ">
+    <div name="home" className="h-screen w-full bg-gradient-to-b from-gray-800 to bg-black ">
       
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
