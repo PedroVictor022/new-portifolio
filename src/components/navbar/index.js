@@ -31,7 +31,7 @@ const Navbar = () => {
 
       <div className="hidden md:flex ">
         {links.map(item => (
-          <NextLink key={item.id} href={item.href} className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-150 duration-200">{item.link}</NextLink>
+          <NextLink key={item.id} href={item.href} className="px-6 cursor-pointer capitalize font-medium text-2xl text-gray-300 hover:scale-150 duration-200">{item.link}</NextLink>
         ))}
       </div>
 
