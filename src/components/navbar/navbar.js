@@ -1,10 +1,26 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Box, Container, Flex, Heading, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack, useColorMode, useColorModeValue } from "@chakra-ui/react";
-import NextLink from "next/link";
+import NextLink from "../utils/NextLink";
 import ThemeToggleButton from "../utils/toggleBtn";
 
+const LinkItem = ({ href, path, children }) => {
+  const active = path = href;
+  const inactiveColor = useColorMode('gray.200', 'whiteAlpha.900')
+  return (
+    <NextLink 
+      href={href}
+      p={2}
+      bg={active ? 'glassTeal' : undefined}
+      color={active ? "#3202023" : inactiveColor}
+    >
+      {children}
+    </NextLink>
+  )
+}
+
 // Nav component
-const Navbar = (props) => {
+const Navbar = props => {
+  const { path } = props;
 
   return (
     <Box
@@ -53,14 +69,14 @@ const Navbar = (props) => {
             mt={{ base: 0, md: 5 }}
             gap="1rem"
           >
-            <NextLink href="/" passHref>
+            <NextLink href="/" path={path}>
               Home
             </NextLink>
-            <NextLink href="/projetos" passHref>
-              Projetos
+            <NextLink href="/" path={path}>
+              Home
             </NextLink>
-            <NextLink href="/sobre" passHref>
-              Sobre
+            <NextLink href="/" path={path}>
+              Home
             </NextLink>
           </Stack>
         </Flex>
@@ -82,7 +98,7 @@ const Navbar = (props) => {
                 <NextLink href="/" passHref>
                   <MenuItem>Home</MenuItem>
                 </NextLink>
-                <NextLink href="/projetos">
+                <NextLink href="/projetos" path>
                   <MenuItem>Projetos</MenuItem>
                 </NextLink>
                 <NextLink href="/sobre">
