@@ -1,7 +1,7 @@
 import { DiJavascript1, DiReact } from "react-icons/di";
 import { FaVuejs } from "react-icons/fa";
 import { TbBrandNextjs, TbBrandTailwind, TbBrandGithub, TbBrandPython } from "react-icons/tb"
-import { SiMongodb, SiPostgresql, SiDocker, SiGraphql, SiDart } from "react-icons/si"
+import { SiMongodb, SiPostgresql, SiDocker, SiGraphql, SiTypescript } from "react-icons/si"
 
 const Experience = () => {
 
@@ -64,8 +64,8 @@ const Experience = () => {
     },
     {
       id: 10,
-      comp: <SiDart  className="sm:text-6xl md:text-6xl w-40 mx-auto text-blue-300 " />,
-      title: 'Dart',
+      comp: <SiTypescript  className="sm:text-6xl md:text-6xl w-40 mx-auto text-blue-300 " />,
+      title: 'Typescript',
       // // shadow: 'shadow-blue-300'
     },
     {
