@@ -84,7 +84,9 @@ const Experience = () => {
   ];
 
   return (
-    <div name="experience" className="h-screen w-full bg-gradient-to-b  from-black to-gray-900">
+    <div name="experience" className="h-screen w-full bg-gradient-to-b  from-black to-zinc-900">
+
+      {/* //todo: REWORK PAGE WIDTH AND COLORS */}
 
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
 
