@@ -101,7 +101,7 @@ const Experience = () => {
           {
             //todo: REWORK TO BG COLOR PROJECTS
             techs.map(item => (
-              <div className={`bg-gradient-to-r from-purple-900 to-purple-600 to-gray-900 shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${item.shadow} hover:scale-105 duration-100`} key={item.id}>
+              <div className={`bg-gradient-to-r shadow-md hover:scale-105 duration-500 to-zinc-900 from-gray-900 hover:duration-200 py-2 rounded-lg ${item.shadow} hover:scale-105 duration-100`} key={item.id}>
                 <div className="sm:text-4xl">{item.comp}</div>
                 <p className="text-white">{item.title}</p>
               </div>
