@@ -2,6 +2,7 @@ import { DiJavascript1, DiReact } from "react-icons/di";
 import { FaVuejs } from "react-icons/fa";
 import { TbBrandNextjs, TbBrandTailwind, TbBrandGithub, TbBrandPython } from "react-icons/tb"
 import { SiMongodb, SiPostgresql, SiDocker, SiGraphql, SiTypescript } from "react-icons/si"
+import { TechItem } from "../techItem";
 
 const Experience = () => {
 
@@ -99,12 +100,12 @@ const Experience = () => {
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {
-            //todo: REWORK TO BG COLOR PROJECTS
             techs.map(item => (
-              <div className={`bg-gradient-to-r shadow-md hover:scale-105 duration-500 to-zinc-900 from-gray-900 hover:duration-200 py-2 rounded-lg ${item.shadow} hover:scale-105 duration-100`} key={item.id}>
-                <div className="sm:text-4xl">{item.comp}</div>
-                <p className="text-white">{item.title}</p>
-              </div>
+              <TechItem 
+                id={item.id}
+                comp={item.comp}
+                title={item.title}
+              />
             ))
           }
         </div>
