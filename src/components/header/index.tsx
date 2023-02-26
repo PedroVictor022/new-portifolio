@@ -7,7 +7,7 @@ import { WrapLine } from "../../styles/utils";
 export default function Header() {
   return (
     <HeaderComponent>
-      <Title />
+      <Title text1="Desenvolvedor" text2="Full Stack"/>
 
       <div className="box_1">
         <p>Bem vindo ao meu Portifolio</p>
@@ -42,9 +42,13 @@ export default function Header() {
 }
 
 const HeaderComponent = styled.div`
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-top: 2rem;
+
   .box_1 {
     display: flex;
     flex-direction: column;
