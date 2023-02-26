@@ -4,8 +4,8 @@ export default function Title() {
   return (
     <>
       <TitleComp>
-          <h1>Desenvolvedor</h1>
-         <span>Full Stack</span>
+        <span>Desenvolvedor</span>
+        <span className="secondary">Full Stack</span>
       </TitleComp>
     </>
   );
@@ -18,7 +18,18 @@ const TitleComp = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
 
+  margin-top: 2rem;
   padding: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
 
-  font-size: 26px;
+  color: white;
+  .secondary {
+    color: #5658DD;
+  }
+  font-size: 36px;
+
+  @media (max-width:786px) {
+    font-size: 32px;
+  }
 `;
