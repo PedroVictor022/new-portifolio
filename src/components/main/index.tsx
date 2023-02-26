@@ -1,10 +1,12 @@
 import styled from "styled-components"
+import About from "../about"
 import Skills from "../skills"
 
 export default function MainApp() {
   return (
     <MainComponent>
       <Skills />
+      <About />
     </MainComponent>
   )
 }
