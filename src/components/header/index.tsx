@@ -8,6 +8,13 @@ export default function Header() {
   return (
     <HeaderComponent>
       <Title />
+
+      <div className="box_1">
+        <p>Bem vindo ao meu Portifolio</p>
+        <p>Aqui você encontra um pouco sobre mim</p>
+        <p>e meus projetos</p>
+      </div>
+
       <div className="box_links">
         <LinkComponents color="#2B2D32">
           <a
@@ -38,6 +45,13 @@ const HeaderComponent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  .box_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    color: #fefefe;
+  }
   .box_links {
     padding-top: 2rem;
     display: flex;
