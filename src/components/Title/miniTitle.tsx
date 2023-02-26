@@ -34,7 +34,7 @@ const MiniTitleComp = styled.div`
   }
   font-size: 26px;
 
-  @media (max-width: 786px) {
+  @media (max-width: 700px) {
     font-size: 20px;
   }
 `;

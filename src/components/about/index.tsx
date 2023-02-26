@@ -40,5 +40,8 @@ const AboutComponent = styled.div`
   div {
     max-width:480px;
     color: #fefefe;
+    @media (max-width:700px) {
+      max-width: 380px;
+    }
   }
 `;

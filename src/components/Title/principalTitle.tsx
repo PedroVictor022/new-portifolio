@@ -33,7 +33,7 @@ export const TitleComp = styled.div`
   }
   font-size: 36px;
 
-  @media (max-width:786px) {
+  @media (max-width:700px) {
     font-size: 32px;
   }
 `;

@@ -26,15 +26,16 @@ export default function MyProjects() {
           />
 
           <ProjectsItem 
-            title="Steam Redesing"
-            description="Uma nova interface para o site da Steam."
+            title="Monitoramento"
+            title2="de memoria RAM"
+            description="Aplicativo desktop criado com ElectronJS, o app monitora o uso de memoria RAM do computador, exibindo as estatisticas em tempo real."
             link="https://steam-new-desing.vercel.app/"
           />
 
           <ProjectsItem 
-            title="Ecommerce"
-            description="Ecommerce criado do total zero, feito com ReactJS e seus hooks."
-            link="https://ecommercegeek.vercel.app/"
+            title="Banco de Imagens"
+            description="O banco de imagens é um trabalho freelancer onde eu estou programando um ecommerce de videos de alta qualidade. Em breve disponivel para acesso."
+            link="*"
           />
         </div>
       </ContainerProjects>
@@ -55,6 +56,9 @@ const ContainerProjects = styled.div`
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 2rem;
+    @media (max-width:700px) {
+      grid-template-columns: 2fr;
+    }
   }
 
 `;
