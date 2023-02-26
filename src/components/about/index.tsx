@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { WrapLine } from "../../styles/utils";
 import Title from "../Title/principalTitle";
 
 export default function About() {
   return (
-    <AboutComponent>
+    <>
+      <AboutComponent>
       <Title text1="Sobre" text2="Mim" />
       {/* MAKE A BOX */}
       <div>
@@ -23,6 +25,8 @@ export default function About() {
         </p>
       </div>
     </AboutComponent>
+    <WrapLine />
+    </>
   );
 }
 
@@ -34,7 +38,7 @@ const AboutComponent = styled.div`
   margin-top: 2rem;
 
   div {
-    width:322px;
+    max-width:480px;
     color: #fefefe;
   }
 `;

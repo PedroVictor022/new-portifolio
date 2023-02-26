@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import About from "../about"
+import MyProjects from "../projects"
 import Skills from "../skills"
 
 export default function MainApp() {
@@ -7,6 +8,7 @@ export default function MainApp() {
     <MainComponent>
       <Skills />
       <About />
+      <MyProjects />
     </MainComponent>
   )
 }
