@@ -25,7 +25,7 @@ const TitleComp = styled.div`
 
   color: white;
   .secondary {
-    color: #5658DD;
+    color: var(--primary-color);
   }
   font-size: 36px;
 

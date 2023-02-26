@@ -26,7 +26,7 @@ export default function Header() {
           <AiFillLinkedin className="icon" />
         </LinkComponents>
 
-        <LinkComponents color="#5658DD">
+        <LinkComponents color={"var(--primary-color)"}>
           <a
             href="https://www.linkedin.com/in/pedro-victor-75440321a/"
             target="_blank"
