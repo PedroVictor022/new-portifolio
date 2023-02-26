@@ -3,6 +3,7 @@ import Title from "../Title/principalTitle";
 
 import { BsCreditCard2Front } from "react-icons/bs";
 import { BiExtension, BiServer } from "react-icons/bi";
+import { WrapLine } from "../../styles/utils";
 
 export default function Skills() {
   return (
@@ -32,6 +33,7 @@ export default function Skills() {
           </div>
         </div>
       </SkillsComponent>
+      <WrapLine />
     </>
   );
 }
@@ -42,11 +44,9 @@ const SkillsComponent = styled.div`
   justify-content: center;
   gap: 3rem;
 
-  margin-top: 1rem;
-  margin: 0 auto;
+  margin-top: 0rem;
 
   .techs {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +56,7 @@ const SkillsComponent = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: white;
     }
 
     .icons {
