@@ -26,8 +26,7 @@ export default function MyProjects() {
           />
 
           <ProjectsItem 
-            title="Monitoramento"
-            title2="de memoria RAM"
+            title="RAM Display"
             description="Aplicativo desktop criado com ElectronJS, o app monitora o uso de memoria RAM do computador, exibindo as estatisticas em tempo real."
             link="https://steam-new-desing.vercel.app/"
           />

@@ -55,6 +55,24 @@ const FlexContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
+  margin: 0 auto;
+
+  p {
+    color: white;
+    font-weight: 600;
+  }
+
+  @media (max-width:700px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 2fr;
+  }
+
+  padding-bottom: 4rem;
 `;
 
 const FooterItems = styled.div`
@@ -80,7 +98,7 @@ const FooterItems = styled.div`
     background-color: transparent;
     text-decoration: none;
     color: var(--primary-color);
-    font-weight: 600;
+    
 
     a {
       text-decoration: none;

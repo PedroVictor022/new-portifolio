@@ -12,9 +12,7 @@ export default function About() {
         <p>
           Meu nome é Pedro Victor, sou dev Full Stack Junior, tenho 20 anos e
           moro em Minas Gerais.
-        </p>
-        <p>
-          Começei a programar há 3 anos e em outubro de 2022 consegui a minha
+           Começei a programar há 3 anos e em outubro de 2022 consegui a minha
           primeira vaga de desenvolvedor Junior.
         </p>
         <br />
@@ -25,7 +23,7 @@ export default function About() {
         </p>
       </div>
     </AboutComponent>
-    <WrapLine />
+    {/* <WrapLine /> */}
     </>
   );
 }
@@ -38,7 +36,7 @@ const AboutComponent = styled.div`
   margin-top: 2rem;
 
   div {
-    max-width:480px;
+    max-width:700px;
     color: #fefefe;
     @media (max-width:700px) {
       max-width: 380px;
