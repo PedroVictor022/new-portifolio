@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -11,7 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     font-family: 'Montserrat', sans-serif;
   }
 `;
+
+export const Container = styled.div`
+  background-color: var(--secondary-color);
+`

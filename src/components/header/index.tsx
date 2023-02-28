@@ -47,7 +47,7 @@ const HeaderComponent = styled.div`
   flex-direction: column;
   align-items: center;
 
-  margin-top: 2rem;
+  padding-top: 2rem;
 
   .box_1 {
     display: flex;
@@ -70,7 +70,7 @@ const LinkComponents = styled.div`
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 5px;
-  background-color: ${(props) => props.color || "#fff"};
+  background-color: ${(props) => props.color || "#ffffff"};
   
   &:hover {
     a {
