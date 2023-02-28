@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Title from "../Title/principalTitle";
 
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillRead } from "react-icons/ai";
 import { WrapLine } from "../../styles/utils";
 
 export default function Header() {
@@ -35,6 +35,15 @@ export default function Header() {
           </a>
           <AiFillGithub className="icon" />
         </LinkComponents>
+        <LinkComponents color="#2B2D32">
+          <a
+            href="https://www.linkedin.com/in/pedro-victor-75440321a/"
+            target="_blank"
+          >
+            CV
+          </a>
+          <AiFillRead className="icon" />
+        </LinkComponents>
       </div>
       <WrapLine />
     </HeaderComponent>
@@ -52,6 +61,7 @@ const HeaderComponent = styled.div`
   .box_1 {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     gap: 0.3rem;
     color: #fefefe;
@@ -59,6 +69,7 @@ const HeaderComponent = styled.div`
   .box_links {
     padding-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 `;
