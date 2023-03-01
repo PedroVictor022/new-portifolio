@@ -8,7 +8,7 @@ export default function About() {
       <AboutComponent>
       <Title text1="Sobre" text2="Mim" />
       {/* MAKE A BOX */}
-      <div>
+      <TextContainer>
         <p>
           Meu nome é Pedro Victor, sou dev Full Stack Junior, tenho 20 anos e
           moro em Minas Gerais.
@@ -21,7 +21,7 @@ export default function About() {
           estou no 3 periodo, apos me formar pretendo iniciar o curso de
           Ciencias da Computacao e me especializar na area.
         </p>
-      </div>
+      </TextContainer>
     </AboutComponent>
     {/* <WrapLine /> */}
     </>
@@ -35,11 +35,24 @@ const AboutComponent = styled.div`
 
   margin-top: 2rem;
 
-  div {
+  /* div {
     max-width:700px;
     color: #fefefe;
     @media (max-width:700px) {
       max-width: 380px;
     }
+  } */
+`;
+
+const TextContainer = styled.div`
+  max-width: 700px;
+  min-width: 300px;
+
+  padding: 1rem;
+  margin: 0 auto;
+
+  color: #fefefe;
+  @media (max-width:750px) {
+    max-width:320px;
   }
 `;

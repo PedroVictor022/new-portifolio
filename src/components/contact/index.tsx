@@ -63,7 +63,7 @@ const FlexContainer = styled.div`
     font-weight: 600;
   }
 
-  @media (max-width:700px) {
+  @media (max-width:750px) {
     display: grid;
     grid-template-columns: 2fr 2fr;
   }
