@@ -45,18 +45,19 @@ export default function Header() {
           <AiFillRead className="icon" />
         </LinkComponents>
       </div>
-      <WrapLine />
     </HeaderComponent>
   );
 }
 
 const HeaderComponent = styled.div`
 
+  background-color: var(--black-2);
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding-top: 2rem;
+  padding-bottom: 2rem;
 
   .box_1 {
     display: flex;

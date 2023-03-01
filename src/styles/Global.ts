@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: #5658DD;
     --secondary-color:#222222;
     --footer-color:#17171C;
+    --black-2: #1b1b1b;
   }
 
   * {

@@ -6,8 +6,8 @@ import Skills from "../skills"
 export default function MainApp() {
   return (
     <MainComponent>
-      <Skills />
       <About />
+      <Skills />
       <MyProjects />
     </MainComponent>
   )
