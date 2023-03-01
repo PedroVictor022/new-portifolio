@@ -29,15 +29,17 @@ export default function About() {
 
           <TextContainer>
             <p>
-              Meu nome é Pedro Victor, sou dev Full Stack Junior, tenho 20 anos
-              e moro em Minas Gerais. Começei a programar há 3 anos e em outubro
-              de 2022 consegui a minha primeira vaga de desenvolvedor Junior.
+              Meu nome é Pedro Victor, sou desenvolvedor Full Stack Júnior,
+              tenho 20 anos e moro em Minas Gerais. Comecei a programar há 3
+              anos e, em outubro de 2022, consegui minha primeira vaga como
+              desenvolvedor Júnior.
             </p>
             <br />
             <p>
-              Estou cursando Analise e Desenvolvimento de Sistemas na PUC Minas
-              e estou no 3 periodo, apos me formar pretendo iniciar o curso de
-              Ciencias da Computacao e me especializar na area.
+              Meu nome é Pedro Victor, sou desenvolvedor Full Stack Júnior,
+              tenho 20 anos e moro em Minas Gerais. Comecei a programar há 3
+              anos e, em outubro de 2022, consegui minha primeira vaga como
+              desenvolvedor Júnior.
             </p>
           </TextContainer>
         </div>
@@ -48,11 +50,33 @@ export default function About() {
 }
 
 const AboutComponent = styled.div`
+  width: 100%;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+
+  /* background-color: red; */
 
   .apresentation {
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 0.4rem;
+    }
+
+    padding-top: 2rem;
+
     display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @media (max-width: 950px) {
+      img {
+        margin-top: 2px;
+      }
+    }
   }
 `;
 
@@ -60,14 +84,11 @@ const TextContainer = styled.div`
   max-width: 700px;
   min-width: 300px;
 
-  border: 1px solid;
-  border-radius: 0.4rem;
-
-  padding: 1rem;
-  margin: 0 auto;
-
+  font-weight: 600;
   color: #fefefe;
-  @media (max-width: 750px) {
-    max-width: 320px;
+
+  @media (max-width: 950px) {
+    max-width: 400px;
+    min-width: 280px;
   }
 `;
