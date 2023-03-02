@@ -31,7 +31,7 @@ export const TitleComp = styled.div`
   .secondary {
     color: var(--primary-color);
   }
-  font-size: 36px;
+  font-size: 42px;
 
   @media (max-width:700px) {
     font-size: 32px;

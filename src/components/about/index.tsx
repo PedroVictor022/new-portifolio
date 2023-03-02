@@ -50,7 +50,7 @@ export default function About() {
 }
 
 const AboutComponent = styled.div`
-  width: 100%;
+  height: 60vh;
 
   display: flex;
   flex-direction: column;
@@ -58,7 +58,9 @@ const AboutComponent = styled.div`
   justify-content: center;
   padding-bottom: 2rem;
 
-  /* background-color: red; */
+  @media (max-width:700px) {
+    height: 60vh;
+  }
 
   .apresentation {
     img {

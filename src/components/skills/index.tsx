@@ -11,11 +11,9 @@ export default function Skills() {
     <>
       <Title text1="Techs" text2="favoritas" />
       <SkillsComponent>
-        <div className="techs">          
-            <BsCreditCard2Front className="icons" />
-            <MiniTitle 
-              text1="Front End"
-            />
+        <div className="techs">
+          <BsCreditCard2Front className="icons" />
+          <MiniTitle text1="Front End" />
           <div>
             <p>HTML5, CSS3, Bootstrap,</p>
             <p>JavaScript, ReactJS, VueJS</p>
@@ -23,20 +21,16 @@ export default function Skills() {
           </div>
         </div>
         <div className="techs">
-            <BiServer className="icons" />
-            <MiniTitle 
-              text1="Back End"
-            />
+          <BiServer className="icons" />
+          <MiniTitle text1="Back End" />
           <div>
             <p>NodeJS, PostgresQL, GraphQL</p>
             <p>MongoDB</p>
           </div>
         </div>
         <div className="techs">
-            <BiExtension className="icons" />
-            <MiniTitle 
-              text1="Ferramentas"
-            />
+          <BiExtension className="icons" />
+          <MiniTitle text1="Ferramentas" />
           <div>
             <p>Figma, Docker, Github</p>
             <p>Gitlab</p>
@@ -49,12 +43,21 @@ export default function Skills() {
 }
 
 const SkillsComponent = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  height: 60vh;
+  padding-bottom: 2rem;
 
-  margin-top: 0rem;
+  @media (max-width:700px) {
+    height: auto;
+  }
+
+  .container_techs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    margin-top: 0rem;
+  }
 
   .techs {
     display: flex;
@@ -86,8 +89,8 @@ const SkillsComponent = styled.div`
     }
   }
 
-  @media (max-width:830px) {
-    flex-wrap:wrap;
+  @media (max-width: 830px) {
+    flex-wrap: wrap;
     .techs {
       /* background-color: green; */
     }

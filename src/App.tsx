@@ -8,7 +8,7 @@ function App() {
     <Container>
       <Header />
       <MainApp />
-      <Contact />
+      {/* <Contact /> */}
     </Container>
   )
 }

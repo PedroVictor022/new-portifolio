@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Title from "../Title/principalTitle";
 
 import { AiFillGithub, AiFillLinkedin, AiFillRead } from "react-icons/ai";
-import { WrapLine } from "../../styles/utils";
 
 export default function Header() {
   return (
@@ -50,7 +49,7 @@ export default function Header() {
 }
 
 const HeaderComponent = styled.div`
-  height: 60vh;
+  height: 100vh;
   background-color: var(--black-2);
   display: flex;
   flex-direction: column;
@@ -80,6 +79,10 @@ const HeaderComponent = styled.div`
       align-items: center;
       justify-content: center;
     }
+  }
+
+  @media (max-width:700px) {
+    height: 70vh;
   }
 `;
 
