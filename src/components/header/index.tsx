@@ -50,11 +50,12 @@ export default function Header() {
 }
 
 const HeaderComponent = styled.div`
-
+  height: 60vh;
   background-color: var(--black-2);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -72,6 +73,13 @@ const HeaderComponent = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+
+    @media (max-width:400px) {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
 

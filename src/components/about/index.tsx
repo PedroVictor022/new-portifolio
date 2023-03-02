@@ -55,6 +55,7 @@ const AboutComponent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-bottom: 2rem;
 
   /* background-color: red; */
@@ -77,6 +78,13 @@ const AboutComponent = styled.div`
         margin-top: 2px;
       }
     }
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      align-items: center;
+
+    }
+
   }
 `;
 
@@ -90,5 +98,9 @@ const TextContainer = styled.div`
   @media (max-width: 950px) {
     max-width: 400px;
     min-width: 280px;
+  }
+
+  @media (max-width:470px) {
+    width: 320px;
   }
 `;
