@@ -82,7 +82,8 @@ const HeaderComponent = styled.div`
   }
 
   @media (max-width:700px) {
-    height: 70vh;
+    height: auto;
+    min-height: 50vh;
   }
 `;
 

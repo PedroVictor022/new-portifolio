@@ -19,47 +19,46 @@ export default function About() {
   }, []);
 
   return (
-    <>
-      <AboutComponent>
-        <Title text1="Sobre" text2="Mim" />
-        {/* MAKE A BOX */}
+    <AboutComponent>
+      <Title text1="Sobre" text2="Mim" />
+      {/* MAKE A BOX */}
 
-        <div className="apresentation">
-          <img src={avatar} alt="" />
+      <div className="apresentation">
+        <img src={avatar} alt="" />
 
-          <TextContainer>
-            <p>
-              Meu nome é Pedro Victor, sou desenvolvedor Full Stack Júnior,
-              tenho 20 anos e moro em Minas Gerais. Comecei a programar há 3
-              anos e, em outubro de 2022, consegui minha primeira vaga como
-              desenvolvedor Júnior.
-            </p>
-            <br />
-            <p>
-              Meu nome é Pedro Victor, sou desenvolvedor Full Stack Júnior,
-              tenho 20 anos e moro em Minas Gerais. Comecei a programar há 3
-              anos e, em outubro de 2022, consegui minha primeira vaga como
-              desenvolvedor Júnior.
-            </p>
-          </TextContainer>
-        </div>
-      </AboutComponent>
-      {/* <WrapLine /> */}
-    </>
+        <TextContainer>
+          <p>
+            Meu nome é Pedro Victor, sou desenvolvedor Full Stack Júnior, tenho
+            20 anos e moro em Minas Gerais. Comecei a programar há 3 anos e, em
+            outubro de 2022, consegui minha primeira vaga como desenvolvedor
+            Júnior.
+          </p>
+          <br />
+          <p>
+            Meu nome é Pedro Victor, sou desenvolvedor Full Stack Júnior, tenho
+            20 anos e moro em Minas Gerais. Comecei a programar há 3 anos e, em
+            outubro de 2022, consegui minha primeira vaga como desenvolvedor
+            Júnior.
+          </p>
+        </TextContainer>
+      </div>
+    </AboutComponent>
   );
 }
 
 const AboutComponent = styled.div`
-  height: 60vh;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  padding-top: 2rem;
   padding-bottom: 2rem;
 
-  @media (max-width:700px) {
-    height: 60vh;
+  @media (max-width: 700px) {
+    height: auto;
   }
 
   .apresentation {
@@ -81,12 +80,10 @@ const AboutComponent = styled.div`
       }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 700px) {
       flex-direction: column;
       align-items: center;
-
     }
-
   }
 `;
 
@@ -102,7 +99,7 @@ const TextContainer = styled.div`
     min-width: 280px;
   }
 
-  @media (max-width:470px) {
+  @media (max-width: 470px) {
     width: 320px;
   }
 `;

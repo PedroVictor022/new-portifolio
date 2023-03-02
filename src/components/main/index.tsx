@@ -1,14 +1,12 @@
 import styled from "styled-components"
 import About from "../about"
 import MyProjects from "../projects"
-import Skills from "../skills"
 
 export default function MainApp() {
   return (
     <MainComponent>
       <About />
-      <Skills />
-      {/* <MyProjects /> */}
+      {/* COMPONENT DE SKILLS E PROJECTS */}
     </MainComponent>
   )
 }
