@@ -1,4 +1,3 @@
-import Contact from "./components/contact"
 import Header from "./components/header"
 import MainApp from "./components/main"
 import { Container } from "./styles/Global"
