@@ -17,6 +17,25 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// Contains all components of application
 export const Container = styled.div`
   background-color: var(--secondary-color);
-`
+`;
+// Default template components
+export const Layout = styled.div`
+  /* CONFIG WIDTH AND HEIGHT */
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media (max-width: 700px) {
+    height: 60vh;
+  }
+`;

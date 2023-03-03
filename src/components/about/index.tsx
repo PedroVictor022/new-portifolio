@@ -35,11 +35,9 @@ export default function About() {
           </p>
           <br />
           <p>
-            Meu nome é Pedro Victor, sou desenvolvedor Full Stack Júnior, tenho
-            20 anos e moro em Minas Gerais. Comecei a programar há 3 anos e, em
-            outubro de 2022, consegui minha primeira vaga como desenvolvedor
-            Júnior.
+            Comecei a programar em Python, mas quando descobri o Javascript e decidi que eu gostaria de me tornar um desenvolvedor web.
           </p>
+
         </TextContainer>
       </div>
     </AboutComponent>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Title from "../Title/principalTitle";
 
 import { AiFillGithub, AiFillLinkedin, AiFillRead } from "react-icons/ai";
+import { Layout } from "../../styles/Global";
 
 export default function Header() {
   return (
@@ -48,16 +49,8 @@ export default function Header() {
   );
 }
 
-const HeaderComponent = styled.div`
-  height: 100vh;
+const HeaderComponent = styled(Layout)`
   background-color: var(--black-2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 
   .box_1 {
     display: flex;

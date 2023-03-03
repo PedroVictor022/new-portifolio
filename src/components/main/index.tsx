@@ -6,6 +6,7 @@ export default function MainApp() {
   return (
     <MainComponent>
       <About />
+      <MyProjects />
       {/* COMPONENT DE SKILLS E PROJECTS */}
     </MainComponent>
   )
