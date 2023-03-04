@@ -69,12 +69,6 @@ const AboutComponent = styled.div`
     border-radius: 8px;
     padding: 1rem;
 
-    .ap_content {
-      display: flex;
-      flex-direction: column;
-      gap:1rem;
-    }
-
     img {
       width: 160px;
       height: 160px;
@@ -88,6 +82,8 @@ const AboutComponent = styled.div`
     gap: 2rem;
 
     @media (max-width: 950px) {
+      flex-direction: column;
+      align-items: center;
       img {
         margin-top: 2px;
       }
