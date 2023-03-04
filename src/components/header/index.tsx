@@ -7,7 +7,7 @@ import { Layout } from "../../styles/Global";
 export default function Header() {
   return (
     <HeaderComponent>
-      <Title text1="Desenvolvedor" text2="Full Stack"/>
+      <Title text1="Desenvolvedor" text2="Full Stack" />
       {/* TODO: MUDAR COR DE CADA ITEM */}
       <div className="box_1">
         <p>Bem vindo ao meu Portifolio</p>
@@ -16,6 +16,7 @@ export default function Header() {
       </div>
 
       <div className="box_links">
+ 
         <LinkComponents color="#2B2D32">
           <a
             href="https://www.linkedin.com/in/pedro-victor-75440321a/"
@@ -35,15 +36,6 @@ export default function Header() {
           </a>
           <AiFillGithub className="icon" />
         </LinkComponents>
-        <LinkComponents color="#2B2D32">
-          <a
-            href="https://www.linkedin.com/in/pedro-victor-75440321a/"
-            target="_blank"
-          >
-            CV
-          </a>
-          <AiFillRead className="icon" />
-        </LinkComponents>
       </div>
     </HeaderComponent>
   );
@@ -55,7 +47,7 @@ const HeaderComponent = styled(Layout)`
   .box_1 {
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
     gap: 0.3rem;
     color: #fefefe;
@@ -66,7 +58,7 @@ const HeaderComponent = styled(Layout)`
     flex-wrap: wrap;
     gap: 1rem;
 
-    @media (max-width:400px) {
+    @media (max-width: 400px) {
       padding: 1rem;
       display: flex;
       align-items: center;
@@ -74,7 +66,7 @@ const HeaderComponent = styled(Layout)`
     }
   }
 
-  @media (max-width:700px) {
+  @media (max-width: 700px) {
     height: auto;
     min-height: 50vh;
   }
@@ -88,7 +80,7 @@ const LinkComponents = styled.div`
   padding: 1rem;
   border-radius: 5px;
   background-color: ${(props) => props.color || "#ffffff"};
-  
+
   &:hover {
     a {
       color: #fff;
