@@ -24,7 +24,7 @@ export default function About() {
       {/* MAKE A BOX */}
 
       <div className="apresentation">
-        <img src={avatar} alt="" />
+        <img src={avatar} alt="Avatar" />
 
         <TextContainer>
           <p>
@@ -35,9 +35,14 @@ export default function About() {
           </p>
           <br />
           <p>
-            Comecei a programar em Python, mas quando descobri o Javascript e decidi que eu gostaria de me tornar um desenvolvedor web.
+            Comecei a programar em Python, mas quando descobri o Javascript e
+            decidi que eu gostaria de me tornar um desenvolvedor web.
           </p>
-
+          <br />
+          <p>
+            Atualmente estou trabalhando como freelancer em um projeto grande
+            que sera lancado em alguns meses.
+          </p>
         </TextContainer>
       </div>
     </AboutComponent>
@@ -45,7 +50,7 @@ export default function About() {
 }
 
 const AboutComponent = styled.div`
-  height: 100vh;
+  height: 70vh;
 
   display: flex;
   flex-direction: column;
@@ -60,6 +65,16 @@ const AboutComponent = styled.div`
   }
 
   .apresentation {
+    border: 1px solid #5f5f5f40;
+    border-radius: 8px;
+    padding: 1rem;
+
+    .ap_content {
+      display: flex;
+      flex-direction: column;
+      gap:1rem;
+    }
+
     img {
       width: 160px;
       height: 160px;

@@ -20,15 +20,15 @@ export default function Skills() {
       <Title text1="Techs" text2="Favoritas" />
 
       <div className="projectItem">
-        <DiReact  className="icon" color="cyan"/>
-        <DiJavascript1 className="icon" color="yellow"/>
-        <TbBrandNextjs className="icon" color="#fefefe"/>
-        <GrNode className="icon" color="#4F9900"/>
-        <SiGraphql className="icon" color="#d3009e"/>
-        <SiNestjs className="icon" color="red"/>
-        <SiVuedotjs className="icon" color="#0ba56a"/>
-        <SiMongodb className="icon" color="#1aa707" />
-        <SiPostgresql className="icon" color="#0759d3" />
+        <DiReact  className="icon" />
+        <DiJavascript1 className="icon" />
+        <TbBrandNextjs className="icon" />
+        <GrNode className="icon" />
+        <SiGraphql className="icon" />
+        <SiNestjs className="icon" />
+        <SiVuedotjs className="icon" />
+        <SiMongodb className="icon" />
+        <SiPostgresql className="icon" />
       </div>
     </SkillsContainer>
   );
@@ -52,8 +52,10 @@ const SkillsContainer = styled(Layout)`
       transition: all 0.2s;
       &:hover {
         scale: 1.2;
-        color:${(props) => props.color || "#fefefe"};
+        color:var(--primary-color);
         transition: all 0.4s;
+        background-color: #141414;
+        padding:0.5rem;
       }
     }
   }
