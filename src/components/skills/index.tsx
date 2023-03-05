@@ -6,42 +6,40 @@ export default function Skills() {
   return (
     <SkillsContainer>
       <Title text1="MInhas" text2="Habilidades" />
-      <div
-        className="skills"
-      >
-        <h2>Frontend</h2>
-        <p>HTML, CSS, SASS, Style Component, ReactJS, NextJS, ChackraUI</p>
-      </div>
+      <div className="skills_container">
+        <div className="skills">
+          <h2>Frontend</h2>
+          <p>HTML, CSS, SASS, Style Component, ReactJS, NextJS, ChackraUI</p>
+        </div>
 
-      <div
-        className="skills"
-      >
-        <h2>Backend</h2>
-        <p>NodeJS, NestJS, PostgresQL, MongoDB, GraphQL, WebScraping</p>
-      </div>
-
-      <div
-        className="skills"
-      >
-        <h2>Outros</h2>
-        <p>Electron, Testes Unitarios,Python, Docker, Linux</p>
+        <div className="skills">
+          <h2>Backend</h2>
+          <p>NodeJS, NestJS, PostgresQL, MongoDB, GraphQL, WebScraping</p>
+        </div>
+        <div className="skills">
+          <h2>Outros</h2>
+          <p>Electron, Testes Unitarios,Python, Docker e Linux</p>
+        </div>
       </div>
     </SkillsContainer>
   );
 }
 
 const SkillsContainer = styled(Layout)`
-  height: 60vh;
-  .skills {
+  height: 50vh;
+
+  .skills_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom:1rem;
-    h2 {
-      color:#fff;
-    }
+    align-items: flex-start;
+    justify-content: center;
+
+    color: #fefefe;
+
     p {
-      color: #fff;
+      padding:1rem;
     }
+
   }
+
 `;
