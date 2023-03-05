@@ -8,7 +8,7 @@ export default function MainApp() {
     <MainComponent>
       <About />
       <Skills />
-      {/* <MyProjects /> */}
+      <MyProjects />
       {/* COMPONENT DE SKILLS E PROJECTS */}
     </MainComponent>
   )

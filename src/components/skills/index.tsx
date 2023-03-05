@@ -30,7 +30,14 @@ export default function Skills() {
 }
 
 const SkillsContainer = styled(Layout)`
+  width:100%;
   height: 65vh;
+  background-color: var(--black-2);
+
+  @media (max-width: 700px) {
+    padding-top: 4rem;
+    height: auto;
+  }
 
   .skills_container {
     margin-top: 2rem;
@@ -47,6 +54,12 @@ const SkillsContainer = styled(Layout)`
       transition: 0.4s all;
       border-radius: 2rem;
 
+      @media (max-width: 700px) {
+        p {
+          padding: 1rem;
+        }
+      }
+
       p {
         padding: 2rem;
       }
@@ -55,15 +68,16 @@ const SkillsContainer = styled(Layout)`
         display: inline-block;
       }
 
-      &::after {
+      @media (min-width: 701px) {
+        &::after {
           content: "";
           position: absolute;
-          width:100%;
-          transform:scaleX(0);
+          width: 100%;
+          transform: scaleX(0);
           height: 2px;
           bottom: 0;
-          left:0;
-          background-color:var(--primary-color);
+          left: 0;
+          background-color: var(--primary-color);
           transform-origin: bottom right;
           transition: transform 0.65s ease-out;
         }
@@ -73,15 +87,16 @@ const SkillsContainer = styled(Layout)`
           transform-origin: bottom left;
         }
 
-      &:hover {
-        scale: 1.1;
-        transition: 0.3s all;
-        
-        margin: 1rem;
+        &:hover {
+          scale: 1.1;
+          transition: 0.3s all;
 
-        p {
-          padding: 2rem;
-          font-weight: 600;
+          margin: 1rem;
+
+          p {
+            padding: 2rem;
+            font-weight: 600;
+          }
         }
       }
     }

@@ -62,6 +62,7 @@ const AboutComponent = styled.div`
 
   @media (max-width: 700px) {
     height: auto;
+    padding-bottom: 6rem;
   }
 
   .apresentation {
