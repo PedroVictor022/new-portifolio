@@ -20,10 +20,6 @@ export default function Skills() {
           <h2 className="title">Outros</h2>
           <p>Electron, Testes, Python, Docker e Linux</p>
         </div>
-        {/* <div className="skills">
-          <h2>Outros</h2>
-          <p>Electron, Testes Unitarios,Python, Docker e Linux</p>
-        </div> */}
       </div>
     </SkillsContainer>
   );
@@ -50,6 +46,8 @@ const SkillsContainer = styled(Layout)`
     gap: 1rem;
 
     .skills {
+      /* width: 680px; */
+
       text-align: center;
       transition: 0.4s all;
       border-radius: 2rem;
