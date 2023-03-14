@@ -41,7 +41,7 @@ export default function About() {
           <br />
           <p>
             Atualmente estou trabalhando como freelancer em um projeto grande
-            que sera lancado em alguns meses.
+            que sera lancado em alguns meses e tambem comecei a estudar Java, uma linguagem que eu sempre tive curiosidade de estudar.
           </p>
         </TextContainer>
       </div>

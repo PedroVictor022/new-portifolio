@@ -5,7 +5,7 @@ import Title from "../Title/principalTitle";
 export default function Skills() {
   return (
     <SkillsContainer>
-      <Title text1="MInhas" text2="Habilidades" />
+      <Title text1="Minhas" text2="Habilidades" />
       <div className="skills_container">
         <div className="skills">
           <h2 className="title">Frontend</h2>
