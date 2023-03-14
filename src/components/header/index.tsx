@@ -9,6 +9,7 @@ export default function Header() {
     <HeaderComponent>
       <Title text1="Desenvolvedor" text2="Full Stack" />
       {/* TODO: MUDAR COR DE CADA ITEM */}
+      
       <div className="box_1">
         <p>Bem vindo ao meu Portifolio</p>
         <p>Aqui você encontra um pouco sobre mim</p>
