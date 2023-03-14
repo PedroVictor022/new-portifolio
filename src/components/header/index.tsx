@@ -80,11 +80,10 @@ const LinkComponents = styled.div`
   padding: 1rem;
   border-radius: 5px;
   background-color: ${(props) => props.color || "#ffffff"};
+  cursor: pointer;
 
   &:hover {
-    a {
-      color: #fff;
-    }
+    opacity: 0.8;
   }
 
   a {

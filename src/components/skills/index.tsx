@@ -65,38 +65,6 @@ const SkillsContainer = styled(Layout)`
         padding-top: 1rem;
         display: inline-block;
       }
-
-      @media (min-width: 701px) {
-        &::after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          transform: scaleX(0);
-          height: 2px;
-          bottom: 0;
-          left: 0;
-          background-color: var(--primary-color);
-          transform-origin: bottom right;
-          transition: transform 0.65s ease-out;
-        }
-
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: bottom left;
-        }
-
-        &:hover {
-          scale: 1.1;
-          transition: 0.3s all;
-
-          margin: 1rem;
-
-          p {
-            padding: 2rem;
-            font-weight: 600;
-          }
-        }
-      }
     }
   }
 `;

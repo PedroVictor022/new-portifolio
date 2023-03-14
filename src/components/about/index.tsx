@@ -90,6 +90,10 @@ const AboutComponent = styled.div`
       }
     }
 
+    @media (min-width:700px) {
+      margin-bottom: 4rem;
+    }
+
     @media (max-width: 700px) {
       flex-direction: column;
       align-items: center;
@@ -108,6 +112,7 @@ const TextContainer = styled.div`
     max-width: 400px;
     min-width: 280px;
   }
+
 
   @media (max-width: 470px) {
     width: 320px;
